@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BestSlidePuzzle"
+             x:Class="BestSlidePuzzle.MainPage">
+
+    <!--This App is for information about Puzzles, Puzzle types and places to play or watch puzzles, with a Quiz-->
+    <!--This is a Tabbed Page for the layout of the App-->
+    
+    <!--This is the main page-->
+    <ContentPage Title="Puzzle Info" BackgroundColor="Coral">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Welcome to Puzzle Info App" VerticalOptions="Center" HorizontalOptions="Center" TextDecorations="Underline" />
+                <Label Text=""/>
+                <Label Text="Welcome to this app of puzzle facts, the hypest puzzle facts ever" HorizontalOptions="Center"/>
+                <Image Source="https://i.imgur.com/i4MiCln.png" Aspect="AspectFit"/>
+                <Label Text="This is an app made for lovers of puzzles new and old" HorizontalOptions="Center"/>
+            </StackLayout>            
+        </ContentPage.Content>       
+    </ContentPage>
+
+    <!--This is the page for types of puzzles-->
+    <ContentPage Title="Puzzle Types" BackgroundColor="LightPink">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="4 Types of Puzzles" VerticalOptions="Center" HorizontalOptions="Center" TextDecorations="Underline"/>
+                <Label Text=""/>
+                <Label Text="1. Slide Puzzles" />
+                <Label Text="A slide puzzle is a puzzle made up of sliding tiles with images or numbers printed on them, the challenge in this is to slide the pieces until the original image is made"/>
+                <Label Text="2. Mechanical Puzzles" />
+                <Label Text="A mechanical puzzle is object that has pieces locked or interconnected in a way, where the solution to the puzzle is to unlock or discounted the parts of the puzzle, like a Rubik's cube" />
+                <Label Text="3. Jigsaw Puzzles" />
+                <Label Text="The classic jigsaw is an image on card that has been cut into different shapes and the object is to put the pieces back together in such a way that the original image is shown again." />
+                <Label Text="4. Word Puzzles"/>
+                <Label Text="These are puzzles all designed around words, be that finding them, creating them, matching them or unscrambling them. Word puzzles include things such as Scrabble and Crosswords."/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <!--This is the page for recommended puzzles and YouTube puzzle videos Top 4-->
+    <ContentPage Title="Puzzle Places" BackgroundColor="LightGreen">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Places to Play Puzzles / Places to watch puzzles" VerticalOptions="Center" HorizontalOptions="Center" TextDecorations="Underline"/>
+                <Label Text=""/>
+                <Label Text="There are many places to play puzzle games and a lot of interesting YouTube channels about puzzles"/>
+                <Label Text="This apps current site recommendations are"/>
+                <Label Text="Puzzle games - Free Online" TextDecorations="Underline"/>
+                <Label Text="1. Kongregate - https://www.kongregate.com/puzzle-games"/>
+                <Label Text="2. Newgrounds - https://www.newgrounds.com/games/browse/genre/puzzles/interval/year/sort/score"/>
+                <Label Text="3. Mindgames - https://www.mindgames.com/Puzzle+Games"/>
+                <Label Text="4. Agame - https://www.agame.com/games/puzzle"/>
+
+                <Label Text="This apps current youtube recommendations are"/>
+                <Label Text="Youtube" TextDecorations="Underline"/>
+                <Label Text="1. Mr Puzzle - https://www.youtube.com/channel/UCuZ4plJK1KkSqRBYps3rNww/videos"/>
+                <Label Text="2. Chris Ramsay - https://www.youtube.com/user/MrTricksforfun/videos"/>
+                <Label Text="3. Cracking the Cryptic - https://www.youtube.com/channel/UCC-UOdK8-mIjxBQm_ot1T-Q/videos"/>
+                <Label Text="4. Puzzle Guy - https://www.youtube.com/channel/UCGl7qkMPao3EBkxIDlPal4g/videos"/>
+
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <!--This is the page for the puzzle quiz-->
+    <ContentPage Title="Puzzle Quiz" BackgroundColor="LightSeaGreen">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Puzzle Quiz" VerticalOptions="Center" HorizontalOptions="Center" TextDecorations="Underline"/>
+                <Label Text="This is a quiz bassed on everything in the app so far, One question at a time, Try your best and good luck"/>
+                <Label Text=""/>
+                
+                <!--Quiz Questions-->
+                <!--Each entry box has a name of "Quest" which then can be linked to the cs file for answer checking-->
+                <Label Text="1.	What are Slide puzzles are made up of?"/>
+                <Entry x:Name="Quest01" Placeholder="Enter Answer Here"/>
+
+                <!--Each clicked event is linked into the cs, the code there then says when the button is clicked it will check if the answer is correct-->
+                <Button x:Name="answerCheck01" Text="Check Answer" Clicked="AnswerCheck_Clicked"/>
+
+                <Label Text="2.	What is a will known mechanical puzzle mentioned in the app?"/>
+                <Entry x:Name="Quest02" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck02" Text="Check Answer" Clicked="AnswerCheck02_Clicked"/>
+
+                <Label Text="3.	What amount of puzzle types where talked about in Puzzle Types?"/>
+                <Entry x:Name="Quest03" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck03" Text="Check Answer" Clicked="AnswerCheck03_Clicked"/>
+
+                <Label Text="How many Zs in Puzzle?"/>
+                <Entry x:Name="Quest04" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck04" Text="Check Answer Here" Clicked="AnswerCheck04_Clicked"/>
+
+                <Label Text="What was the number 1 rated site to play puzzles this week?"/>
+                <Entry x:Name="Quest05" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck05" Text="Check Answer Here" Clicked="AnswerCheck05_Clicked"/>
+
+                <Label Text="What was the number 1 rated puzzle Youtuber this week?"/>
+                <Entry x:Name="Quest06" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck06" Text="Check Answer Here" Clicked="AnswerCheck06_Clicked"/>
+
+                <Label Text="How many times is the word puzzle used in this app?"/>
+                <Entry x:Name="Quest07" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck07" Text="Check Answer Here" Clicked="AnswerCheck07_Clicked"/>
+
+                <Label Text="(Fill in the Blank) the ______ puzzle facts ever"/>
+                <Entry x:Name="Quest08" Placeholder="Enter Answer Here"/>
+
+                <Button x:Name="answerCheck08" Text="Check Answer Here" Clicked="AnswerCheck08_Clicked"/>
+
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+
+
+</TabbedPage>
