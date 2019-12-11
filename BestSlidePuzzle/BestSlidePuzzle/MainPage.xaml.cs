@@ -43,7 +43,7 @@ namespace BestSlidePuzzle
 
         private void AnswerCheck03_Clicked(object sender, EventArgs e)
         {
-            if (Quest03.Text == "4")
+            if (Quest03.Text == "4" || Quest03.Text == "at least 1")
             {
                 Quest03.Text = "Answer is correct!";
             }
