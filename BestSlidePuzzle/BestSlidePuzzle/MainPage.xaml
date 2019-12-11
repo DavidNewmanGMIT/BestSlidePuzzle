@@ -66,7 +66,7 @@
 
     <!--This is the page for the puzzle quiz-->
     <ContentPage Title="Puzzle Quiz" BackgroundColor="LightSeaGreen">
-        <ContentPage.Content>
+        <ScrollView>
             <StackLayout>
                 <Label Text="Puzzle Quiz" VerticalOptions="Center" HorizontalOptions="Center" TextDecorations="Underline"/>
                 <Label Text="This is a quiz bassed on everything in the app so far, One question at a time, Try your best and good luck"/>
@@ -80,7 +80,7 @@
                 <!--Each clicked event is linked into the cs, the code there then says when the button is clicked it will check if the answer is correct-->
                 <Button x:Name="answerCheck01" Text="Check Answer" Clicked="AnswerCheck_Clicked"/>
 
-                <Label Text="2.	What is a will known mechanical puzzle mentioned in the app?"/>
+                <Label Text="2.	What is a well known mechanical puzzle mentioned in the app?"/>
                 <Entry x:Name="Quest02" Placeholder="Enter Answer Here"/>
 
                 <Button x:Name="answerCheck02" Text="Check Answer" Clicked="AnswerCheck02_Clicked"/>
@@ -117,7 +117,7 @@
 
 
             </StackLayout>
-        </ContentPage.Content>
+        </ScrollView>
     </ContentPage>
 
 
